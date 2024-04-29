@@ -55,8 +55,7 @@ function randomNumber(min, max){
 function game(num){
 	user_number.innerText = userInput.value;
 	 var userValue=userInput.value;	
-	 userValue <=6	
-	if(num == userValue){ 
+		if(num == userValue){ 
 	     win.innerText = ++won
 		result.innerHTML = "You win ";
 		info_box_result.style.background = "green";
@@ -78,11 +77,17 @@ function game(num){
 			
 		
 		  }
-    total.innerText = 10;
-    win.innerText = 0 ;
-    loss.innerText = 0;
+		  count = 10;
+		  won = 0;
+		  losted = 0;
+		  
+
+	total.innerText = count;
+	win.innerText = won;
+	loss.innerText =losted;
 	
 	 }
 }
+
     
  
