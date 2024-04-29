@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="img/favicon.png"/>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Virtual dice</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<body>
+	<main id="container">
+		<h1>Dice | GAME </h1>
+		<p id="result1"></p>
+		<section id="content">
+			<p id="draw">?</p>
+			<figure>
+				<img src="img/0.png" alt="dice" id="diceImg">
+			</figure>
+			
+			<section id="game">
+				<h3></h3>
+				<input type="text" maxlength="1" placeholder="User Input" id="userInput">
+				<button id="gameBtn">Enter</button>
+				
+		</section>
+		</section>
+		
+	</main>
+	
+	<audio preload id="sound" src="assets/dado-rolando.mp3"></audio>
+	 <!-- result box -->
+	<div id="mainbox">
+		<div class="info_box"> <b>User Number :</b> <span id="user_number">10</span>  </div>
+		<div id="info_box_result" class="info_box"> <b id="result">You Loss / Win</b></div>
+	</div> 	
+	  <div id="mainbox">
+		<div class="info_box"> <b>Turns :</b> <span id="total">10</span> </div>
+		<div class="info_box"> <b>Win :</b><span id="win">0</span>   </div>
+		<div class="info_box"> <b>Loss :</b> <span id="loss">0</span>  </div>
+	  </div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
